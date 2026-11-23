@@ -12,19 +12,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://aryan-bandi.vercel.app/"),
+  metadataBase: new URL("https://carlson.vercel.app/"),
 
   openGraph: {
-    title: "Aryan Bandi",
-    description: "Join us for a beautiful celebration of tradition and blessings. 29 November 2026",
-    url: "https://aryan-bandi.vercel.app/",
+    title: "Carlson's First Holy Communion",
+    description: "Join us for Carlson's First Holy Communion on 19th December",
+    url: "https://carlson.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Aryan Bandi",
+        alt: "Carlson's First Holy Communion",
       },
     ],
     type: "website",
@@ -32,13 +32,13 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Bandi",
-    description: "Join us for a beautiful celebration of tradition and blessings. 29 November 2026",
+    title: "Carlson's First Holy Communion",
+    description: "Join us for Carlson's First Holy Communion on 19th December",
     images: ["/og.jpg"],
   },
 
   other: {
-    "og:image:secure_url": "https://aryan-bandi.vercel.app/og.jpg",
+    "og:image:secure_url": "https://carlson.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };

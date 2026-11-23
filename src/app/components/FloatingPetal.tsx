@@ -1,7 +1,5 @@
 "use client";
 
-import { useMemo } from "react";
-
 export default function FloatingPetal({
   className,
   style
@@ -9,27 +7,12 @@ export default function FloatingPetal({
   className?: string;
   style?: React.CSSProperties;
 }) {
-
-  const petalValues = useMemo(() => {
-
-    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
-
-    const duration = isDesktop
-      ? 40 + Math.random() * 30   // longer for desktop
-      : 20 + Math.random() * 15;
-
-    const delay = Math.random() * 10;
-
-    const scale =
-      Math.random() < 0.6
-        ? 0.4 + Math.random() * 0.4
-        : 0.9 + Math.random() * 0.6;
-
-    const rotate = Math.random() * 360;
-
-    return { duration, delay, scale, rotate };
-
-  }, []);
+  const petalValues = {
+    duration: 30,
+    delay: 0,
+    scale: 0.7,
+    rotate: 180,
+  };
 
 
   return (
