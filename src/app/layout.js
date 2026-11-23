@@ -12,12 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://carlson.vercel.app/"),
+  metadataBase: new URL("https://carlsonn.vercel.app/"),
 
   openGraph: {
     title: "Carlson's First Holy Communion",
     description: "Join us for Carlson's First Holy Communion on 19th December",
-    url: "https://carlson.vercel.app/",
+    url: "https://carlsonn.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata = {
   },
 
   other: {
-    "og:image:secure_url": "https://carlson.vercel.app/og.jpg",
+    "og:image:secure_url": "https://carlsonn.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
