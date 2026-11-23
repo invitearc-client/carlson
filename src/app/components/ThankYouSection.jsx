@@ -132,7 +132,7 @@ export default function ThankYouSection() {
       <h2 className="cormorant-garamond text-3xl md:text-xl lg:text-[60px] text-[#7E6628] text-center">
         Gift Guide
       </h2>
-      <h2 className="montserrat text-[15px] md:text-xl lg:text-[18px] text-[#827953] text-center mt-2 font-semibold">
+      <h2 className="montserrat text-[15px] md:text-xl lg:text-[18px] text-[#827953] text-center mt-2 font-semibold px-4">
         Strictly no gifts - Your presence is the greatest gift
       </h2>
 
@@ -158,6 +158,13 @@ export default function ThankYouSection() {
           <br />
           Vasai West 401201
         </h2>
+           <a
+                href="https://maps.app.goo.gl/PhQbSuw2f2EReetR8"
+                className="text-[#887344] underline md:text-xl text-[16px] cormorant-garamond"
+                target="_blank"
+              >
+                View Location
+              </a>
         <img src="/assets/element2.png" alt="element2" className="w-40 my-2" />
         <img src="/assets/qr.png" alt="element2" className="md:w-50 w-30 my-2" />
 

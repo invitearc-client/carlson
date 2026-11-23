@@ -150,10 +150,10 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="absolute md:right-[1%] left-[65%]  top-[44%] z-10 flex flex-col gap-[13px]">
+            <div className="absolute md:right-[1%] left-[65%]  top-[44%] z-10 flex flex-col md:gap-[13px] gap-[7px]">
               {verses.map(([title, verse]) => (
                 <div key={title}>
-                  <p className="font-serif italic md:text-[17px] text-[15px] text-[#82775e]">
+                  <p className="font-serif italic md:text-[17px] text-[12px] text-[#82775e]">
                     {title}
                   </p>
                   <p className="text-[8px] tracking-wide text-[#82775e] mt-0.5">
@@ -203,10 +203,10 @@ export default function Home() {
           <img
             src="/assets/element2.png"
             alt="element2"
-            className="w-40 mb-4"
+            className="w-40 mb-4 mt-10"
           />
 
-          <section className="w-full py-8 px-4 md:px-8">
+          <section className="w-full py-4 px-4 md:px-8">
             <div className="max-w-[650px] mx-auto relative">
               {/* Timeline Line */}
               <div className="absolute left-[17px] top-5 bottom-5 w-px bg-[#d9c9a8]" />
@@ -337,14 +337,14 @@ export default function Home() {
                 </div>
 
                 {/* Boys */}
-                <div className="flex items-center gap-4 mt-6">
+                <div className="flex items-center gap-4 mt-6 justify-center">
                   <img
                     src="/assets/element4.png"
                     alt="element2"
                     className="w-1/5"
                   />
                   <div className="text-left">
-                    <p className="libre-caslon-text-regular text-[10px] text-[#786637]">
+                    <p className="libre-caslon-text-regular text-[12px] font-bold text-[#786637]">
                       BOYS
                     </p>
                     <p className="montserrat text-[14px] text-[#817D63]">
@@ -359,21 +359,21 @@ export default function Home() {
                 <div className="w-14 h-px bg-[#E1D7C5] my-5" />
 
                 {/* Girls */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 justify-center">
                   <img
                     src="/assets/element5.png"
                     alt="element2"
                     className="w-1/5"
                   />
                   <div className="text-left">
-                    <p className="libre-caslon-text-regular text-[10px] text-[#786637]">
+                    <p className="libre-caslon-text-regular text-[12px] font-bold text-[#786637]">
                       GIRLS
                     </p>
                     <p className="montserrat text-[14px] text-[#817D63]">
                       Beige
                     </p>
                     <p className="montserrat text-[14px] text-[#817D63]">
-                      Bow in Hair
+                      Bow in <br/> Hair
                     </p>
                   </div>
                 </div>
