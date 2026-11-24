@@ -108,10 +108,10 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/christian.mp3" loop preload="auto" playsInline />
  <IntroVideo onFinish={() => setIntroDone(true)} />
       <div className="relative w-full min-h-screen bg-[url('/assets/hero-image.webp')] bg-cover bg-center bg-no-repeat">
-        <img src="/assets/hero_top.webp" alt="hero_top" className="w-full" />
+        {/* <img src="/assets/hero_top.webp" alt="hero_top" className="w-full" /> */}
 
-        <div className="relative z-10 flex flex-col justify-center items-center md:-mt-30">
-          <img src="/assets/element1.png" alt="element1" className="w-40" />
+        <div className="relative z-10 flex flex-col justify-center items-center pt-15">
+          {/* <img src="/assets/element1.png" alt="element1" className="w-40" /> */}
 
           <h2 className="cormorant-garamond text-2xl md:text-3xl lg:text-[40px] text-[#AF630E] mt-4">
             A Journey of Faith
@@ -126,11 +126,11 @@ export default function Home() {
 
         <section className="relative z-10 w-full flex justify-center py-10 px-4">
           <div className="relative w-full max-w-[500px] aspect-[493/640] overflow-hidden">
-            <div className="absolute top-[16%] left-[14%] z-10">
+            {/* <div className="absolute top-[16%] left-[14%] z-10">
               <span className="pinyon-script-regular md:text-3xl  text-2xl text-[#77663d]">
                 I AM
               </span>
-            </div>
+            </div> */}
 
             <img
               src="/assets/sign.webp"
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
         </section>
         <p className="pinyon-script-regular md:text-6xl text-4xl text-[#77663d] text-center my-20">
-          Carl’s First <br />
+          Carlson’s First <br />
           Holy Communion
         </p>
 
@@ -188,9 +188,7 @@ export default function Home() {
               A Heart Full of Faith & Gratitude
             </h2>
             <h2 className="montserrat text-[10px] md:text-xl lg:text-[14px] text-[#AF630E] text-center mt-2 px-20 md:px-40">
-              With a heart full of faith and gratitude, I am delighted to 
-              invite you to celebrate this special milestone as I receive
-              Jesus in the Holy Eucharist for the first time.
+              With profound faith and immense gratitude, I am honoured to invite you to rejoice with me in celebrating this sacred milestone, as I received Jesus in the Holy Eucharist for the first time.
             </h2>
           </div>
 
@@ -283,10 +281,10 @@ export default function Home() {
                   <div className="w-[84px] h-[84px] rounded-full bg-white border border-[#D8D0B7] shadow-lg" />
                 </div>
 
-                <p className="montserrat text-[14px] leading-[19px] text-[#817D63] max-w-[220px]">
+                {/* <p className="montserrat text-[14px] leading-[19px] text-[#817D63] max-w-[220px]">
                   Classic tuxedo or bespoke dark suit paired with crisp linen
                   and formal accents.
-                </p>
+                </p> */}
               </div>
 
               {/* Card 2 - Ladies */}
@@ -314,10 +312,10 @@ export default function Home() {
                   ))}
                 </div>
 
-                <p className="montserrat text-[14px] leading-[19px] text-[#817D63] max-w-[240px]">
+                {/* <p className="montserrat text-[14px] leading-[19px] text-[#817D63] max-w-[240px]">
                   Floor-length evening gowns or refined cocktail silhouette in
                   soft warm neutrals.
-                </p>
+                </p> */}
               </div>
 
               {/* Card 3 - Kids */}

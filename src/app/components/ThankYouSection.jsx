@@ -63,9 +63,9 @@ export default function ThankYouSection() {
           className="relative z-10 w-full max-w-[300px] md:max-w-[390px] shrink-0 min-h-[290px] md:min-h-[310px] bg-[#FFFAF5] 
       shadow-[0_12px_25px_rgba(90,75,45,0.10)] border border-[#F0E7DA] flex flex-col items-center justify-center text-center px-5 py-8"
         >
-          <p className="montserrat text-[11px] md:text-[12px] tracking-[2px] text-[#82795A]">
+          {/* <p className="montserrat text-[11px] md:text-[12px] tracking-[2px] text-[#82795A]">
             SACRED MATRIMONY
-          </p>
+          </p> */}
 
           <h2 className="cormorant-garamond text-[23px] md:text-[35px] tracking-[9px] text-[#84733D] mt-1 ml-2">
             RSVP
@@ -148,7 +148,7 @@ export default function ThankYouSection() {
             <span className="w-7 h-px bg-[#D8C99F]" />
           </div>
       <div className="relative z-10 w-full max-w-[700px] flex flex-col justify-center  items-center text-center px-6 pt-14 md:pt-28">
-        <img src="/assets/element1.png" alt="element1" className="w-40" />
+        {/* <img src="/assets/element1.png" alt="element1" className="w-40" /> */}
         <h2 className="cormorant-garamond text-[#887344] text-xl md:text-[30px] mt-4">
           Address:-
         </h2>
