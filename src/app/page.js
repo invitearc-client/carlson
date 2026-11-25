@@ -22,10 +22,32 @@ const verses = [
   ["A Conqueror", "JEREMIAH 31:3"],
   ["Loved Forever", "JEREMIAH 31:3"],
 ];
+
+const PrayerIcon = ({ size = 28, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M12 2.5V13.2" />
+    <path d="M12 13.2L7.2 18.2L3 14L7 10L9.7 2.8C10.2 1.5 11.8 1.2 12.8 2.1" />
+    <path d="M12 13.2L16.8 18.2L21 14L17 10L14.3 2.8C13.8 1.5 12.2 1.2 11.2 2.1" />
+    <path d="M3 14L1.5 15.5L5.5 19.5L7 18" />
+    <path d="M21 14L22.5 15.5L18.5 19.5L17 18" />
+  </svg>
+);
 const palettes = ["#D0C5A5", "#F1E8D6", "#C5AD89", "#9E9077"];
 const events = [
   { title: "Grand Entry", time: "8:15 PM", icon: DoorOpen },
-  { title: "Prayer", time: "8:30 PM", icon: Cross },
+  // { title: "Prayer", time: "8:30 PM", icon: Cross },
+  { title: "Prayer", time: "8:30 PM", icon: PrayerIcon },
   { title: "Cake Cutting", time: "8:45 PM", icon: Cake },
   { title: "Surprise Performance", time: "9:00 PM", icon: Star },
   {
@@ -126,11 +148,11 @@ export default function Home() {
 
         <section className="relative z-10 w-full flex justify-center py-10 px-4">
           <div className="relative w-full max-w-[500px] aspect-[493/640] overflow-hidden">
-            {/* <div className="absolute top-[16%] left-[14%] z-10">
-              <span className="pinyon-script-regular md:text-3xl  text-2xl text-[#77663d]">
+            <div className="absolute top-[16%] left-[14%] z-10">
+              <span className="cormorant-garamond md:text-3xl  text-2xl text-[#77663d]">
                 I AM
               </span>
-            </div> */}
+            </div>
 
             <img
               src="/assets/sign.webp"
@@ -195,7 +217,7 @@ export default function Home() {
           <img
             src="/assets/element3.webp"
             alt="element2"
-            className="md:w-3/7 w-2/3 md:mt-40 mt-30"
+            className="md:w-3/7 w-4/5 md:mt-40 mt-30"
           />
 
           <img

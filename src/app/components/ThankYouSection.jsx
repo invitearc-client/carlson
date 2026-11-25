@@ -159,7 +159,7 @@ export default function ThankYouSection() {
           Vasai West 401201
         </h2>
            <a
-                href="https://maps.app.goo.gl/PhQbSuw2f2EReetR8"
+                href="https://maps.app.goo.gl/e4FwZ3KWeJwyWaLE9"
                 className="text-[#887344] underline md:text-xl text-[16px] cormorant-garamond"
                 target="_blank"
               >
