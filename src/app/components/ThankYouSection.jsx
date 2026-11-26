@@ -177,7 +177,14 @@ export default function ThankYouSection() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
+    
+
+<img
+        src="/assets/church.png"
+        alt="Mata Image"
+        className="relative left-1/2 block w-screen max-w-none -translate-x-1/2"
+      />
+       <div className="flex flex-col items-center justify-center mt-15">
         <a
           href="https://invitearc.com/"
           target="_blank"
@@ -193,7 +200,7 @@ export default function ThankYouSection() {
         </a>
       </div>
 
-      <div className="mb-1 flex flex-col items-center justify-center gap-2 md:pb-40 pb-20">
+      <div className="mb-1 flex flex-col items-center justify-center gap-2 md:pb-40 pb-10">
         <a
           href="https://www.instagram.com/theinvitearc/"
           target="_blank"
@@ -205,13 +212,6 @@ export default function ThankYouSection() {
           <span>Follow us on Instagram</span>
         </a>
       </div>
-
-<img
-        src="/assets/church.png"
-        alt="Mata Image"
-        className="relative left-1/2 block w-screen max-w-none -translate-x-1/2"
-      />
-     
     </>
   );
 }

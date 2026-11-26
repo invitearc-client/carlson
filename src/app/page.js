@@ -43,7 +43,7 @@ const PrayerIcon = ({ size = 28, ...props }) => (
     <path d="M21 14L22.5 15.5L18.5 19.5L17 18" />
   </svg>
 );
-const palettes = ["#D0C5A5", "#F1E8D6", "#C5AD89", "#9E9077"];
+const palettes = ["#C5A67E", "#D1B996",];
 const events = [
   { title: "Grand Entry", time: "8:15 PM", icon: DoorOpen },
   // { title: "Prayer", time: "8:30 PM", icon: Cross },
