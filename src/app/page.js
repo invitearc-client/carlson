@@ -149,7 +149,7 @@ export default function Home() {
         <section className="relative z-10 w-full flex justify-center py-10 px-4">
           <div className="relative w-full max-w-[500px] aspect-[493/640] overflow-hidden">
             <div className="absolute top-[16%] left-[14%] z-10">
-              <span className="cormorant-garamond md:text-3xl  text-2xl text-[#77663d]">
+              <span className="cormorant-garamond md:text-3xl  text-3xl text-[#77663d]">
                 I AM
               </span>
             </div>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
 
           <img
-            src="/assets/element3.webp"
+            src="/assets/element3.png"
             alt="element2"
             className="md:w-3/7 w-4/5 md:mt-40 mt-30"
           />
