@@ -69,7 +69,7 @@ export default function IntroVideo({ onFinish }: { onFinish?: () => void }) {
     >
       <video
         ref={videoRef}
-        poster="/assets/hero_video.webp"
+        poster="/assets/hero_video.png"
         playsInline
         webkit-playsinline="true"
         muted

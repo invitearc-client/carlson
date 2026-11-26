@@ -162,7 +162,7 @@ export default function Home() {
 
             <div className="absolute left-[14%] top-[49%] z-10">
               <span
-                className="pinyon-script-regular md:text-[60px] text-[50px] text-[#77663d]"
+                className="pinyon-script-regular md:text-[60px] text-[50px] text-[#d39606]"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "rotate(180deg)",
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <p className="pinyon-script-regular md:text-6xl text-4xl text-[#77663d] text-center my-20">
+        <p className="pinyon-script-regular md:text-6xl text-4xl text-[#d39606] text-center my-20">
           Carlson’s First <br />
           Holy Communion
         </p>

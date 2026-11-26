@@ -3,16 +3,16 @@ import { MapPin, Camera } from "lucide-react";
 export default function ThankYouSection() {
   return (
     <>
-      <section className="relative w-full min-h-[500px] md:min-h-[580px] overflow-hidden flex justify-center">
+      {/* <section className="relative w-full min-h-[500px] md:min-h-[580px] overflow-hidden flex justify-center"> */}
         {/* Top Left Floral Decoration */}
-        <img
+        {/* <img
           src="/assets/element6.png"
           alt="Floral Decoration"
           className="absolute top-0 left-0 w-[180px] md:w-[300px] h-auto object-contain object-left-top"
-        />
+        /> */}
 
         {/* Center Content */}
-        <div className="relative z-10 w-full max-w-[700px] flex flex-col justify-center  items-center text-center px-6 pt-24 md:pt-28 pb-48 md:pb-32">
+        {/* <div className="relative z-10 w-full max-w-[700px] flex flex-col justify-center  items-center text-center px-6 pt-24 md:pt-28 pb-48 md:pb-32">
           <img src="/assets/element1.png" alt="element1" className="w-40" />
           <h2 className="cormorant-garamond text-[#887344] text-xl md:text-[36px] mt-4">
             A Heartfelt Thank You
@@ -42,15 +42,15 @@ export default function ThankYouSection() {
           <p className="montserrat text-[#827953] text-[10px] md:text-[16px] mt-2">
             Thank You For Celebrating With Us!
           </p>
-        </div>
+        </div> */}
 
         {/* Bottom Right Communion Illustration */}
-        <img
+        {/* <img
           src="/assets/church.png"
           alt="First Holy Communion Illustration"
           className="absolute bottom-0 right-0 w-[220px] md:w-[350px] h-auto object-contain object-bottom"
-        />
-      </section>
+        /> */}
+      {/* </section> */}
 
       <section className="w-full flex flex-row items-center justify-center gap-0 px-2 md:py-12 pt-12 overflow-hidden">
         <img
@@ -205,6 +205,13 @@ export default function ThankYouSection() {
           <span>Follow us on Instagram</span>
         </a>
       </div>
+
+<img
+        src="/assets/church.png"
+        alt="Mata Image"
+        className="relative left-1/2 block w-screen max-w-none -translate-x-1/2"
+      />
+     
     </>
   );
 }
