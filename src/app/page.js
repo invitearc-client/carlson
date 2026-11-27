@@ -43,7 +43,7 @@ const PrayerIcon = ({ size = 28, ...props }) => (
     <path d="M21 14L22.5 15.5L18.5 19.5L17 18" />
   </svg>
 );
-const palettes = ["#C5A67E", "#D1B996",];
+const palettes = ["#C5A67E", "#D1B996"];
 const events = [
   { title: "Grand Entry", time: "8:15 PM", icon: DoorOpen },
   // { title: "Prayer", time: "8:30 PM", icon: Cross },
@@ -72,6 +72,25 @@ const events = [
 ];
 
 export default function Home() {
+
+ const [showScroll, setShowScroll] = useState(true);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setShowScroll(window.scrollY < 20);
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  handleScroll();
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
+
   const audioRef = useRef(null);
   const [started, setStarted] = useState(false);
   const [playing, setPlaying] = useState(false);
@@ -127,8 +146,57 @@ export default function Home() {
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="/assets/christian.mp3" loop preload="auto" playsInline />
- <IntroVideo onFinish={() => setIntroDone(true)} />
+      <audio
+        ref={audioRef}
+        src="/assets/christian.mp3"
+        loop
+        preload="auto"
+        playsInline
+      />
+      <IntroVideo onFinish={() => setIntroDone(true)} />
+
+
+ <div className="fixed bottom-20 right-2 z-50 flex flex-col items-center">
+  <button
+    type="button"
+    onClick={() => {
+      window.scrollBy({
+        top: window.innerHeight * 0.7,
+        behavior: "smooth",
+      });
+    }}
+    className="flex flex-col items-center gap-2 text-[#fff]"
+    aria-label="Scroll down to explore"
+  >
+    <span className="flex h-16 w-6 items-center justify-center rounded-full border-2 border-[#C14405] bg-[#C14405] cursor-pointer">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m7 10 5 5 5-5" />
+        <path d="m7 5 5 5 5-5" />
+      </svg>
+    </span>
+
+    <span className="animate-pulse text-[12px] tracking-[2px] poppins-bold  font-bold text-[#C14405]">
+      SCROLL <br /> DOWN
+    </span>
+   
+  </button>
+
+</div>
+
+
+
+
+
+
       <div className="relative w-full min-h-screen bg-[url('/assets/hero-image.webp')] bg-cover bg-center bg-no-repeat">
         {/* <img src="/assets/hero_top.webp" alt="hero_top" className="w-full" /> */}
 
@@ -193,10 +261,14 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center">
           <div className="relative z-10 flex flex-col items-center pl-5 md:pl-12 bg-[url('/assets/communicant.webp')] bg-cover bg-center bg-no-repeat w-90 h-90 md:w-200 md:h-200 md:pt-40 pt-12 md:mt-20">
-            <img src="/assets/element1.png" alt="element1" className="md:w-40 w-20" />
+            <img
+              src="/assets/element1.png"
+              alt="element1"
+              className="md:w-40 w-20"
+            />
 
             <h2 className="cormorant-garamond text-[16px] md:text-2xl lg:text-[40px] text-[#AF630E] mt-4">
-              Meet Out
+              Meet Our
             </h2>
             <h2 className="pinyon-script-regular text-2xl md:text-5xl lg:text-[60px] text-[#AF630E]">
               Communicant
@@ -210,7 +282,9 @@ export default function Home() {
               A Heart Full of Faith & Gratitude
             </h2>
             <h2 className="montserrat text-[10px] md:text-xl lg:text-[14px] text-[#AF630E] text-center mt-2 px-20 md:px-40">
-              With profound faith and immense gratitude, I am honoured to invite you to rejoice with me in celebrating this sacred milestone, as I received Jesus in the Holy Eucharist for the first time.
+              With profound faith and immense gratitude, I am honoured to invite
+              you to rejoice with me in celebrating this sacred milestone, as I
+              received Jesus in the Holy Eucharist for the first time.
             </h2>
           </div>
 
@@ -393,7 +467,7 @@ export default function Home() {
                       Beige
                     </p>
                     <p className="montserrat text-[14px] text-[#817D63]">
-                      Bow in <br/> Hair
+                      Bow in <br /> Hair
                     </p>
                   </div>
                 </div>
@@ -405,12 +479,9 @@ export default function Home() {
             </div>
           </section>
 
-
-          <ThankYouSection/>
+          <ThankYouSection />
         </div>
       </div>
-
-      
     </>
   );
 }
