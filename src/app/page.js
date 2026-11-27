@@ -11,6 +11,8 @@ import {
   Grid2X2,
   Music,
   Heart,
+  CalendarDays,
+  Clock4,
 } from "lucide-react";
 
 const verses = [
@@ -282,7 +284,17 @@ export default function Home() {
             alt="element2"
             className="md:w-3/7 w-4/5 md:mt-40 mt-30"
           />
-
+<div className="flex flex-row justify-center items-center gap-2 ">
+  <CalendarDays className="text-[#8c805d] size-5 md:size-6"/>
+          <h2 className="montserrat text-xl md:text-3xl lg:text-[60px] text-[#7E6628] text-center">
+            19th December 2026
+          </h2>
+</div>
+          <div className="flex flex-row justify-center items-center gap-2 ">
+  <Clock4 className="text-[#8c805d] size-4 md:size-5"/>
+          <h2 className="montserrat text-[15px] md:text-2xl lg:text-[40px] text-[#7E6628] text-center">
+            at 8:00 PM Onwards
+          </h2></div>
           <img
             src="/assets/element2.png"
             alt="element2"
